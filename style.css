@@ -197,7 +197,7 @@
 }
 
 .event-card:hover {
-   background-color: hsl(327, 100%, 41%); /* Darker orange on hover */
+   background-color: lab(90.23% -39.13 7.7 / 0.749); /* Darker orange on hover */
   transform: scale(1.05);
 }
 
@@ -522,3 +522,4 @@ html {
 .download-btn:hover {
   background-color: hsl(216, 80%, 43%);
 }
+
