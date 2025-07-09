@@ -3,7 +3,8 @@
   height: 100vh;
   background-image: url('images/commitee- photo.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: center center;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
@@ -59,7 +60,7 @@
   position: sticky;
   top: 0;
   width: 97.5%;
-  background-color: hsl(332, 83%, 37%);
+  background-color: hwb(332 4% 26%);
   color: white;
   display: flex;
   align-items: center;
@@ -455,7 +456,7 @@ html {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   padding: 20px 30px;
   text-align: center;
-  min-width: 150px;
+  min-width: 90px;
   flex-shrink: 0;
   transition: transform 0.3s ease;
 }
@@ -522,4 +523,46 @@ html {
 .download-btn:hover {
   background-color: hsl(216, 80%, 43%);
 }
+
+.feedback-section {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.feedback-section h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #333;
+}
+
+.feedback-section form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.feedback-section input,
+.feedback-section textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.feedback-section button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.feedback-section button:hover {
+  background-color: #45a049;
+}
+
 
