@@ -426,59 +426,79 @@ html {
   transform: scale(1.05);
 }
 
-.faculty-section {
-  padding: 50px 20px;
-  background-color: #f9f9f9;
+.committee-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  padding: 20px;
+  justify-items: center;
+  
+  
+}
+
+.committee-container .card {
+  background-color: oklab(74.373% 0.08809 0.03114);
+  border: 2px solid #990000;
+  padding: 16px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 180px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+/* Hover animation */
+.committee-container .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #fef3f3;
+}
+
+/* Mobile: 1 column on smaller devices */
+@media (max-width: 500px) {
+  .committee-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+#event-videos {
+  padding: 40px 20px;
+  background-color: #f8f8f8;
   text-align: center;
 }
 
 .section-title {
-  font-size: 30px;
-  font-weight: bold;
-  margin-bottom: 40px;
-  color: #9e1b1b;
-  text-transform: uppercase;
+  font-size: 28px;
+  color: #990000;
+  margin-bottom: 30px;
 }
 
-.faculty-container {
-  display: flex;
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
   justify-content: center;
-  gap: 5px;
-  flex-wrap: nowrap; /* forces horizontal layout */
-  overflow-x: auto;   /* enables horizontal scroll on small screens */
-  padding-bottom: 10px;
+  align-items: start;
 }
 
-.faculty-box {
-  background-color: #fff;
-  border: 2px solid #9e1b1b;
-  border-radius: 10px;
+.video-card {
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px 30px;
-  text-align: center;
-  min-width: 90px;
-  flex-shrink: 0;
-  transition: transform 0.3s ease;
 }
 
-.faculty-box:hover {
-  transform: scale(1.05);
+.video-card video {
+  width: 90%;
+  height: 90%;
+  border-radius: 10px;
 }
 
-.faculty-box h3 {
-  margin-bottom: 10px;
-  color: #9e1b1b;
-  font-size: 25px;
-}
-
-.faculty-box p {
-  font-size: 10px;
-  color: #333;
-}
-
-
-.faculty-box p {
-  font-size: 15px;
+.video-card p {
+  margin-top: 10px;
+  font-weight: 500;
   color: #333;
 }
 
