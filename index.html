@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ENTC Student Association</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+</head>
+
+<body>
+
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="images/logo.jpg" alt="ETESA Logo">
+    </div>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <ul>
+      <li><a href="#organizers" class="active">Organizing Committee</a>
+      <li><a href="#About">About Committee</a></li>
+      <li><a href="#CommitteeClubs">Committee Clubs</a></li>
+      <li><a href="#Events">Events</a></li>
+      <li><a href="#Gallery">Gallery</a></li>
+      <li><a href="#etesa-videos">Videos</a></li>
+      <li><a href="#Reports">Reports</a></li>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="hero-container">
+    <div class="overlay-content">
+      <h2 class="start">Tatyasaheb Kore Institute of Engineering and Technology<br>Welcome to Department of Electronics
+        & Telecommunication Engineering</h2>
+      <h1 class="hero-title">Electronics and Telecommunication Engineering Student Association (ETESA)<br><span>2024–25
+          Committee</span></h1>
+    </div>
+  </div>
+
+
+<!-- Organising Committee Section -->
+
+<div class="members-section" id="organizers">
+  <h2>👥Organizing Committee</h2>
+
+  <!-- Member Role Buttons -->
+  <div class="member-buttons">
+    <button onclick="showpersonDescription('hod')">Head of Department</button>
+    <button onclick="showpersonDescription('advisor')">Faculty Advisor</button>
+    <button onclick="showpersonDescription('president')">President</button>
+    <button onclick="showpersonDescription('vicepresident')">Vice-President</button>
+    <button onclick="showpersonDescription('treasurer')">Treasurer</button>
+    <button onclick="showpersonDescription('secretary')">Secretary</button>
+  </div>
+
+  <!-- Member info card -->
+  <div id="person-description" class="person-card"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+  <!-- About Section -->
+  <section class="etesa-about-section" id="About">
+    <h2 class="section-title">🌟 About ETESA</h2>
+
+    <div class="etesa-content">
+      <p>
+        <strong>ETESA</strong> (Electronics and Telecommunication Engineering Students Association) is the official
+        student body of the ENTC department. It acts as a bridge between faculty and students, encouraging
+        participation, leadership, and holistic development.
+      </p>
+
+      <p>
+        Formed with the vision to empower students beyond academics, ETESA provides a platform where students can
+        explore their creativity, technical interests, and interpersonal skills. From organizing national-level events
+        to cultural and technical workshops, ETESA creates unforgettable experiences that help students grow personally
+        and professionally.
+      </p>
+
+      <h4>🎯 Why ETESA is Important:</h4>
+      <ul>
+        <li>Provides leadership and event management opportunities to students</li>
+        <li>Helps in developing soft skills like communication, teamwork, and time management</li>
+        <li>Fosters technical and cultural talent through various competitions and activities</li>
+        <li>Encourages networking with alumni, industry experts, and other institutions</li>
+        <li>Builds confidence and a sense of responsibility among students</li>
+      </ul>
+
+      <h4>🌱 What We Learn:</h4>
+      <ul>
+        <li>Taking initiative and handling responsibilities with confidence</li>
+        <li>Effective planning, coordination, and time management</li>
+        <li>Problem-solving and decision-making in real-time scenarios</li>
+        <li>Working collaboratively in a diverse team environment</li>
+        <li>Leadership with empathy and efficiency</li>
+      </ul>
+
+      <p>
+        ETESA is not just a committee—it's a journey of growth, learning, and lifelong memories. It brings together
+        enthusiastic minds to lead, innovate, and make a lasting impact on our department and institute.
+      </p>
+    </div>
+  </section>
+
+
+  <section class="committee-section" id="CommitteeClubs">
+    <h2><b>Committee Clubs</b></h2>
+
+    <!-- Dropdown -->
+    <select id="clubSelector" onchange="showClubDescription()">
+      <option value="">-- Visit the Committee Clubs --</option>
+      <option value="national">Eureka-Jidnyasa Coordinator</option>
+      <option value="main-event">Event Coordinator</option>
+      <option value="speaker">Speaker Club</option>
+      <option value="technical">Technical Club</option>
+      <option value="sports">Sports Club</option>
+      <option value="publicity">Publicity Club</option>
+      <option value="cultural">Cultural Club</option>
+      <option value="decoration">Decoration Club</option>
+      <option value="literature">Literature Club</option>
+      <option value="marathi">Marathi-Sahitya Mandal</option>
+    </select>
+
+    <!-- Club Descriptions (add IDs) -->
+    <div class="committee-box" id="speaker">
+      <h3>Speaker Club</h3>
+      <p>The Speaker Club is a vibrant platform dedicated to enhancing communication, public speaking, and leadership
+        skills among students. Our aim is to empower individuals to express their ideas confidently, think critically,
+        and communicate effectively in any setting. Through regular sessions, workshops, debates, group discussions, and
+        guest lectures, members gain practical experience in public speaking, interpersonal communication, and
+        persuasive storytelling. The club also encourages participation in speech contests, panel discussions, and
+        intercollegiate oratory events.</p>
+      <img src="images/speaker.JPG" alt="Speaker" class="club-photo">
+
+    </div>
+
+    <div class="committee-box" id="national">
+      <h3>Eureka! & Jidnyasa Coordinator</h3>
+      <p>
+        <strong>Eureka! & Jidnyasa</strong> is a prestigious national-level event conducted under the ETESA banner,
+        aimed at fostering technical excellence and innovation among engineering students across the country.
+        <strong>Eureka!</strong> focuses on technical paper presentations, encouraging participants to research,
+        analyze, and present engineering advancements in various domains. <strong>Jidnyasa</strong> showcases innovative
+        project presentations, providing a platform for students to exhibit their practical problem-solving and
+        engineering design skills.
+        <br><br>
+        As the coordinator, the role involves end-to-end management of both events — from planning schedules and guiding
+        participants to coordinating with judges and ensuring smooth execution. The coordinator not only ensures
+        academic integrity and quality but also helps promote creativity, confidence, and national-level exposure for
+        all involved.
+      </p>
+      <img src="images/eureka&jidnyasa.JPG" alt="Eureka and EngiDNASA Event" class="club-photo">
+    </div>
+
+    <div class="committee-box" id="main-event">
+      <h3>Event Coordinator</h3>
+      <p>
+        The Event Coordinator plays a vital role in the successful planning and execution of all events organized under
+        ETESA. From brainstorming ideas and creating event plans to coordinating with faculty, vendors, and student
+        teams — the Event Coordinator ensures every event runs smoothly and efficiently. This includes managing
+        logistics, preparing schedules, arranging resources, and overseeing on-the-ground execution during events such
+        as Eureka!, Jidnyasa, Freshers, Farewell, PTA Meetings, and more.
+        <br><br>
+        With strong organizational skills and a proactive approach, the Event Coordinator acts as a bridge between the
+        core committee and the execution team, ensuring that all events align with ETESA’s mission of fostering
+        technical, cultural, and academic growth. The position demands leadership, adaptability, and a passion for
+        bringing ideas to life.
+      </p>
+      <img src="images/events.jpg" alt="Event Coordinator" class="club-photo">
+    </div>
+
+
+    <div class="committee-box" id="technical">
+      <h3>Technical Club</h3>
+      <p>The Technical Club of ETESA fosters innovation, coding, and hands-on learning through workshops, competitions,
+        and project exhibitions. It aims to enhance students' technical skills in electronics, programming, and emerging
+        technologies while promoting a culture of research and development.</p>
+      <img src="images/technical.JPG" alt="Technical" class="club-photo">
+
+    </div>
+
+    <div class="committee-box" id="sports">
+      <h3>Sports Club</h3>
+      <p>A sports club is an organization that brings people together who share a common interest in sports. It provides
+        a structured environment for members to participate in recreational or competitive activities, develop skills,
+        and foster social connections. These clubs can be amateur or professional, and may focus on a single sport or
+        multiple sports. </p>
+      <img src="images/sports.JPG" alt="Sports" class="club-photo">
+
+    </div>
+
+    <div class="committee-box" id="publicity">
+      <h3>Publicity Club</h3>
+      <p>A publicity club in association with students focuses on promoting the club itself, its events, and its
+        members. It utilizes various media to create awareness and engage the student body. Key activities include event
+        promotion, content creation, and media outreach, fostering communication and organizational skills among
+        students. </p>
+      <img src="images/publicity.JPG" alt="publicity" class="club-photo">
+
+    </div>
+
+    <div class="committee-box" id="cultural">
+      <h3>Cultural Club</h3>
+      <p>The Cultural Club celebrates the rich diversity of art, music, dance, drama, and traditions. It provides a
+        platform for students to express their creativity and showcase their talents through various cultural events,
+        festivals, and competitions. With a focus on inclusivity and vibrancy, the club fosters unity and brings the
+        campus alive with colors, rhythms, and joy. </p>
+      <img src="images/cultural.JPG" alt="cultural" class="club-photo">
+
+    </div>
+
+    <div class="committee-box" id="decoration">
+      <h3>Decoration Club</h3>
+      <p>A decoration club in a student association focuses on enhancing spaces, events, and overall aesthetics. It
+        provides a platform for students to develop skills in design, decoration, and creative problem-solving, often
+        through hands-on activities and collaborative projects. These clubs contribute to a more vibrant and engaging
+        campus environment.</p>
+      <img src="images/decoration.JPG" alt="decoration" class="club-photo">
+
+    </div>
+
+    <div class="committee-box" id="literature">
+      <h3>Literature Club</h3>
+      <p>Literary club is to make the students understand, analyze and gain knowledge through the process of reading.
+        The primary objective of the literary club is to promote the literary talents of the students. Moreover, it
+        provides them with the chance to express their creativity and talents in the best possible way.</p>
+      <img src="images/literature.JPG" alt="literature" class="club-photo">
+
+    </div>
+
+    <div class="committee-box" id="marathi">
+      <h3>Marathi-Sahitya Mandal</h3>
+      <p>The Marathi Sahitya Mandal, also known as Marathi Vangmay Mandal, is a student association focused on promoting
+        and preserving the Marathi language and culture. It provides a platform for students to showcase their talents
+        in various art forms like singing, dancing, and poetry, and encourages discussions on social issues.</p>
+      <img src="images/marathi.JPG" alt="marathi Marathi-Sahitya" class="club-photo">
+
+    </div>
+  </section>
+
+  <div class="button-container">
+    <a href="documents/ETESA LIST.pdf" class="center-button">View Committee List!!</a>
+
+
+
+    <!---Events-->
+
+    <section class="event-section" id="Events">
+      <h2>🎯ETESA Event Showcase</h2>
+      <div class="semester-toggle-vertical">
+        <button onclick="toggleSemester('sem1')">Semester 1 ▼</button>
+      <button onclick="toggleSemester('sem2')">Semester 2 ▼</button> 
+    </div>
+        <div id="sem1" class="semester-events">
+          <button onclick="showEvent('inauguration')">Inauguration</button>
+    
+          <button onclick="showEvent('quiz')">Quiz Competition</button>
+          <button onclick="showEvent('PTAMeeting')">PTA-Meeting</button>
+          <button onclick="showEvent('aptitude')">Aptitude-Competition</button>
+          <button onclick="showEvent('essay')">Essay-Writing Competition</button>
+
+    
+          <div class="event-detail" id="inauguration">
+            <h3>Inauguration Ceremony</h3>
+            <div class="inauguration-details">
+              <p><strong>Date:</strong> 9 September 2024</p>
+              <p><strong>Chief Guest:</strong> Mr. Rajesh Desai – CEO & Co-founder of Lyra Network</p>
+              <p>
+                The ETESA Inauguration Ceremony marked the official commencement of the academic year with enthusiasm
+                and inspiration. Mr. Rajesh Desai, a proud alumnus of our department, delivered a motivational speech
+                encouraging students to pursue innovation and leadership in their careers.
+              </p>
+              <p>
+                The event included a welcome address, committee introductions, cultural performances, and an interactive
+                session with the chief guest.
+              </p>
+    
+            </div>
+            <div class="inauguration-photos">
+              <img src="images/ing1.jpg" alt="Inauguration 1" />
+              <img src="images/ing2.jpg" alt="Inauguration 2" />
+              <img src="images/ing3.jpg" alt="Inauguration 3" />
+              <img src="images/ing5.jpg" alt="Inauguration 1" />
+              <img src="images/ing7.jpg" alt="Inauguration 1" />
+              <img src="images/ing6.jpg" alt="Inauguration 1" />
+              <img src="images/ing4.jpg" alt="Inauguration 1" />
+              <img src="images/ing10.jpg" alt="Inauguration 1" />
+              <img src="images/ing9.jpg" alt="Inauguration 1" />
+    
+            </div>
+            </div>
+        
+    
+    
+    
+    
+          <div class="event-detail" id="PTAMeeting">
+            <h3>Parents-Teacher Meeting</h3>
+            <p><strong>Date:</strong> 28 September 2024</p>
+            <div class="pta-content">
+              <p>
+                The Parents Teachers Meeting (PTA) is an essential part of our semester where parents, teachers, and
+                coordinators come together to discuss students' academic and overall development.
+              </p>
+              <p>
+                During the session, our <b>Training and Placement Coordinator - Prof. More Sir</b> provided valuable
+                insights on placement activities and preparation strategies. <b>Prof. Dipti Chavan Ma'am</b> presented a
+                detailed overview of the <b>CDC Cell</b> and shared information about various extra-curricular
+                activities conducted under the student association.
+              </p>
+              <p>
+                Our <b>Head of Department Dr. S. T. Jadhav sir</b> also interacted with the parents, addressing academic
+                performance, department goals, and future plans.
+              </p>
+              <p>
+                Academic rankers were <b>felicitated</b> during the event, proudly accompanied by their parents,
+                creating a moment of honor and motivation for all. Towards the end of session,<b>Prof. P. D. Lole
+                  sir</b> proposed the <b>Vote of Thankss! </b>,expressing gratitude to all parents,faculty members,and
+                the organizing commitee for their valuable presence and contributions.
+              </p>
+              <p>
+                The meeting concluded with a pleasant <b>refreshment lunch</b>, encouraging informal interaction between
+                parents and faculty members.
+              </p>
+    
+    
+            </div>
+    
+            <div class="Parents-photos">
+              <img src="images/pta2.jpg" alt="Freshers 1" />
+              <img src="images/pta6.jpg" alt="Freshers 1" />
+              <img src="images/pta4.jpg" alt="Freshers 1" />
+              <img src="images/pta10.jpg" alt="Freshers 1" />
+              <img src="images/pta7.jpg" alt="Freshers 1" />
+              <img src="images/pta5.jpg" alt="Freshers 1" />
+              <img src="images/pta8.jpg" alt="Freshers 1" />
+              <img src="images/pta3.jpg" alt="Freshers 1" />
+              <img src="images/pta9.jpg" alt="Freshers 1" />
+              <img src="images/pta1.jpg" alt="Freshers 1" />
+              <img src="images/pta11.jpg" alt="Freshers 1" />
+              <img src="images/pta12.jpg" alt="Freshers 1" />
+    
+            </div>
+          </div>
+     
+    
+        <div class="event-detail" id="quiz">
+          <h3>Quiz Competition</h3>
+          <p><strong>Date:</strong> 26 Sep 2024</p>
+          <p><strong>Participants:</strong> 100 teams (200 Participants)</p>
+          <a href="participant/quiz.pdf" class="Event-Button">View Participants List</a>
+    
+          <div class="event-card">
+            <p class="event-description">
+              The event was conducted in three exciting and competitive rounds:
+              <br><br>
+              <strong>Round 1 – Aptitude Test:</strong> A basic aptitude screening round to filter out participants
+              based on logical reasoning, math, and problem-solving.
+              <br><br>
+              <strong>Round 2 – Advanced Aptitude:</strong> A higher difficulty level test with tricky questions and a
+              <strong>negative marking</strong> system to increase the challenge.
+              <br><br>
+              <strong>Round 3 – Rapid Q&A:</strong> A quick-fire question and answer session to test general knowledge,
+              technical concepts, and presence of mind.
+            </p>
+            <div class="winners">
+              <strong>Winners:</strong>
+              <ul>
+                <li>1st Place: Shubham Dake & Nikhil Chinchkar (S.Y.CSE)</li>
+                <li>2nd Place: Rohan Kawle & Akash Patil (T.Y.CSE)</li>
+                <li>3rd Place: Sahil Chaugule & Shreyash Mane (B.E.MECH)</li>
+              </ul>
+            </div>
+          </div>
+    
+          <div class="quiz-photos">
+            <img src="images/quiz1.jpg" alt="Photo 1">
+            <img src="images/quiz4.jpg" alt="Photo 2">
+            <img src="images/quiz8.jpg" alt="Photo 3">
+            <img src="images/quiz2.jpg" alt="Photo 4">
+            <img src="images/quiz11.jpg" alt="Photo 5">
+            <img src="images/quiz3.jpg" alt="Photo 6">
+            <img src="images/quiz9.jpg" alt="Photo 7">
+            <img src="images/quiz10.jpg" alt="Photo 8">
+            <img src="images/quiz5.jpg" alt="Photo 9">
+    
+    
+          </div>
+        </div>
+                
+     
+    
+      <div class="event-detail" id="aptitude">
+        <h3>Mind Marathon :Aptitude Competition</h3>
+        <p><strong>Date:</strong> 7 October 2024</p>
+        <p><strong>Participants:</strong> 195 </p>
+        <a href="participant/APT.pdf" class="Event-Button">View Participants List</a>
+    
+        <div class="event-card">
+    
+          <p class="event-description">
+            The competition was designed to test logical thinking, numerical ability, and problem-solving under pressure
+            through two challenging rounds:
+            <br><br>
+            <strong>Round 1 – General Aptitude:</strong> A written round that included a variety of questions based on
+            logical reasoning, quantitative aptitude, and verbal ability. This round helped shortlist participants for
+            the final stage.
+            <br><br>
+            <strong>Round 2 – Advanced Aptitude (with Negative Marking):</strong> A higher-level aptitude test that
+            required speed, accuracy, and strategic thinking. To increase competitiveness, this round included
+            <strong>negative marking</strong> for wrong answers.
+          </p>
+          </div>
+    
+          <div class="winners">
+            <strong>Winners:</strong>
+            <ul>
+              <li>1st Place: Sakshi Ghatage (F.Y) & Tushar Lakeri (T.Y.CSE)</li>
+              <li>2nd Place: Amruta Magdum (B.E. ETC)</li>
+              <li>3rd Place: Anurag Doijad (B.E. ETC)</li>
+            </ul>
+              
+          </div>
+     
+    
+        <div class="aptitude-photos">
+          <img src="images/apti1.jpg" alt="Photo 1">
+          <img src="images/apti3.jpg" alt="Photo 2">
+          <img src="images/apti2.jpg" alt="Photo 3">
+          <img src="images/apti5.jpg" alt="Photo 4">
+          <img src="images/apti7.jpg" alt="Photo 5">
+          <img src="images/apti4.jpg" alt="Photo 6">
+          <img src="images/apti6.jpg" alt="Photo 7">
+          <img src="images/apti2.jpg" alt="Photo 8">
+          <img src="images/apti8.jpg" alt="Photo 9">
+    
+    
+        </div>
+      </div>
+              
+      
+    
+    
+    
+    
+      <div class="event-detail" id="essay">
+        <h3>Essay-Writing Competition</h3>
+        <p><strong>Date:</strong> 9 October 2024</p>
+        <p><strong>Participants:</strong> 70 </p>
+        <a href="participant/ESSAY.pdf" class="Event-Button">View Participants List</a>
+    
+        <div class="event-card">
+    
+          <p class="event-description">
+            The competition was organized in two categories to encourage expression in both native and global languages:
+            <br><br>
+            <strong>1. Marathi Essay:</strong> Participants wrote thoughtful essays on topics related to culture, society,
+            and innovation in Marathi, showcasing their language skills and originality.
+            <br><br>
+            <strong>2. English Essay:</strong> This round focused on global issues, technology, and youth, promoting clear
+            articulation and critical thinking in English.
+          </p>
+          </div>
+    
+          <div class="winners">
+            <strong>Winners – Marathi Essay:</strong>
+            <ul>
+              <li>1st Place: Akanksha Hujare (T.Y.CSE)</li>
+              <li>2nd Place: Gayatri Doijad (F.Y.) & Tanuja Patil (S.Y. ETC) </li>
+              <li>3rd Place: Sejal Palkar (F.Y.) & Vishwajeet Patil (T.Y. ETC)</li>
+            </ul>
+    
+            <strong>Winners – English Essay:</strong>
+            <ul>
+              <li>1st Place: Samruddhi Gulmire (S.Y. ETC)</li>
+              <li>2nd Place: Shivani Nagavkar (S.Y. CSE) & Pooja Javale (T.Y. ETC)</li>
+              <li>3rd Place: Sonam Rajput & Vaishnavi Hirave</li>
+            </ul>
+              
+          </div>
+       
+    
+        <div class="aptitude-photos">
+          <img src="images/essay1.jpg" alt="Photo 1">
+          <img src="images/essay3.jpg" alt="Photo 1">
+          <img src="images/essay5.jpg" alt="Photo 1">
+          <img src="images/essay6.jpg" alt="Photo 1">
+    
+          <img src="images/essay8.jpg" alt="Photo 1">
+          <img src="images/essay10.jpg" alt="Photo 1">
+          <img src="images/essay9.jpg" alt="Photo 1">
+    
+          <img src="images/essay4.jpg" alt="Photo 1">
+          <img src="images/essay2.jpg" alt="Photo 1">
+    
+        </div>
+        </div>
+        </div>
+     
+    
+    
+    <div id="sem2" class="semester-events">
+          
+        <button onclick="showEvent('coding')">Coding Competition</button>
+        <button onclick="showEvent('visit')"> Industrial Visit</button>
+        <button onclick="showEvent('freshers')"> Freshers 2K25</button>
+        <button onclick="showEvent('eureka')">Eureka-Jidnyasa-2k25</button>
+        <button onclick="showEvent('hunt')">Treasure-Hunt</button>
+        <button onclick="showEvent('farewell')">B.Tech Farewell</button>
+    
+        <button onclick="showEvent('valedictory')">ETESA Valedictory</button>
+    
+    
+       <div class="event-detail" id="coding">
+          <h3>Coding Competition</h3>
+          <p><strong>Date:</strong> 27 January 2025</p>
+          <p><strong>Participants:</strong> 92 </p>
+          <a href="participant/CODING1.pdf" class="Event-Button">View Participants List</a>
+          <p class="event-description">
+            The event was conducted in two intense and skill-testing rounds to identify the best coders:
+            <br><br>
+            <strong>Round 1 – Online Technical Test:</strong> Conducted on mobile devices, this round included
+            multiple-choice questions (MCQs) based on <strong>Python, C programming, and Data Structures & Algorithms
+              (DSA)</strong>. Participants were required to follow <strong>strict rules and regulations</strong>, ensuring a
+            fair and disciplined environment.
+            <br><br>
+            <strong>Round 2 – Hands-on Coding:</strong> Held on the <strong>HackerRank platform</strong>, participants were
+            given a challenging coding problem to solve within <strong>2 hours</strong>. This round tested real-world
+            problem-solving and coding efficiency under time pressure.
+          </p>
+    
+          <div class="winners">
+            <strong>Winners:</strong>
+            <ul>
+              <li>1st Place: Pankaj Warvante (T.Y. CSE) & Shubham Dhanlobhe (T.Y. CSE)</li>
+              <li>2nd Place: Sushant Sawant  (T.Y. CSE)</li>
+              <li>3rd Place: Avishkar Patil  (T.Y. CSE)</li>
+            </ul>
+              
+          </div>
+    
+    
+    
+          <div class="coding-photos">
+            <img src="images/code1.jpg" alt="Photo 1">
+            <img src="images/code5.jpg" alt="Photo 1">
+            <img src="images/code3.jpg" alt="Photo 1">
+            <img src="images/code4.jpg" alt="Photo 1">
+            <img src="images/code2.jpg" alt="Photo 1">
+            <img src="images/code6.jpg" alt="Photo 1">
+    
+    
+    
+          </div>
+        </div>
+      </div>
+    
+    
+    
+    
+    
+    
+    
+      <div class="event-detail visit" id="visit">
+        <div class="event-card">
+          <div class="industrial-visit" id="IndustrialVisit">
+            <div class="container">
+            
+              <h2>Industrial Visit: Elcom International Pvt. Ltd.</h2>
+              <p class="location">Location: Kagal 5 Star MIDC, Kolhapur</p>
+               <p><strong>Date:</strong> 7 March, 2025</p>
+    
+              <div class="visit-text">
+                <p>
+                  Elcom Interantional Pvt. Ltd., established in 1981, is a pioneer in the field of electromechanical and
+                  electronic components. The company provides a wide range of high-performance products like switches,
+                  connectors, and power distribution units, catering to industries such as telecom, industrial automation,
+                  and electronics.
+                </p>
+                <p>
+                  Our industrial visit offered students valuable insights into real-world manufacturing processes, component
+                  design, quality control, and the latest innovations in electronics hardware. It was a remarkable learning
+                  experience that bridged the gap between academic concepts and industrial applications.
+                </p>
+                <div class="visit-content">
+                  <img src="images/elcom.jpg" alt="Elcom Visit" class="visit-image" />
+                  <img src="images/visit1.jpg" alt="Elcom Visit" class="visit-image" />
+                  <img src="images/visit2.jpg" alt="Elcom Visit" class="visit-image" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    
+    
+    
+    
+    
+    
+      <!-- Freshers Event -->
+      <div class="event-detail" id="freshers">
+        <h3>Freshers Party - AURA 2K25</h3>
+        <div class="freshers-content">
+          <p><strong>Date:</strong> 17 April 2025</p>
+          <p><strong>Venue:</strong> College Auditorium</p>
+          <p>
+            The Freshers' Party 2025 was a grand and lively event organized to welcome the new batch of students into the
+            ETESA family.
+            The celebration was filled with music, dance, fun games, and memorable performances that helped break the ice
+            between seniors and juniors.
+          </p>
+          <p>
+            The highlight of the evening was the Mr. and Miss Fresher contest, where new students showcased their talent and
+            confidence.
+            The event concluded with a DJ night and refreshments, creating lasting memories and bonding among the students.
+          </p>
+          <p><strong>Special Titles:</strong></p>
+          <ul>
+            <li>👑 Mr. Fresher: Sudarshan Patil.</li>
+            <li>👑 Miss Fresher: Umera Attar.</li>
+          </ul>
+        </div>
+    
+        <div class="freshers-photos">
+          <img src="images/fresher1.jpg" alt="Freshers 1" />
+          <img src="images/fresher2.jpg" alt="Freshers 2" />
+          <img src="images/fresher3.jpg" alt="Freshers 3" />
+            
+        </div>
+      </div>
+    
+      </div>
+    
+    
+      <div class="event-detail" id="eureka">
+        <h3>National Level Event: Eureka & Jidnyasa</h3>
+    
+        <div class="freshers-content">
+          <p><strong>Date:</strong> 17 April 2025</p>
+          <p><strong>Venue:</strong> TKIET Warananagar</p>
+    
+          <p>
+            Our committee successfully organized the national-level event <strong>Eureka & Jidnyasa</strong>, bringing
+            together students from various institutes to showcase their technical knowledge, creativity, and innovative
+            thinking.
+          </p>
+    
+          <p>
+            <strong>Eureka</strong> featured a <strong>technical paper presentation</strong> competition where participants
+            presented research and ideas in emerging domains such as IoT, Embedded Systems, Signal Processing, and
+            Cybersecurity.
+          </p>
+    
+          <p>
+            <strong>Jidnyasa</strong> was a <strong>project exhibition</strong> where students demonstrated their working
+            models, prototypes, and creative projects, offering hands-on insight into real-world applications.
+          </p>
+    
+          <p><strong>Special Attractions:</strong></p>
+          <ul>
+            <li>🎨 <strong>Technical Art Exhibition</strong> – Posters, infographics, and theme-based artwork</li>
+            <li>🎮 <strong>Gaming Zone</strong> – Including games like <em>Mortal Kombat</em></li>
+            <li>🌈 <strong>Rangoli with Circuit Symbols</strong> – Blending traditional art with electronics</li>
+            <li>💡 <strong>Live Project Displays</strong> – Interactive demos of innovative solutions</li>
+          </ul>
+        </div>
+    
+        <div class="freshers-photos">
+          <img src="images/eur1.jpg" alt="Eureka 1" />
+          <img src="images/eur2.jpg" alt="Eureka 2" />
+          <img src="images/eur3.jpg" alt="Eureka 3" />
+          <img src="images/eur4.jpg" alt="Eureka 3" />
+          <img src="images/eur5.jpg" alt="Eureka 3" />
+          <img src="images/eureka.jpg" alt="Eureka 3" />
+            
+        </div>
+      </div>
+      </div>
+    
+    
+      <div class="event-detail" id="hunt">
+        <h3>Treasure Hunt</h3>
+    
+        <div class="freshers-content">
+          <p><strong>Date:</strong> 3 April 2025</p>
+          <p><strong>Participants:</strong>51 Teams (204 participants)</p>
+ <a href="participant/hunt.pdf" class="Event-Button">View Participants List</a>
+          <p>
+            The Treasure Hunt event was one of the most thrilling and interactive events organized by the association,
+            designed to challenge students’ logic, teamwork, and thinking under pressure.
+          </p>
+    
+          <p>
+            The event consisted of four creative and adventurous rounds:
+          </p>
+    
+          <ul>
+            <li><strong>Round 1: Mobile Quiz Round</strong> – Participants answered a fun mix of movie-based riddles,
+              logical questions, and basic math puzzles through an online mobile-based test. This round was both humorous
+              and brain-teasing to set the tone for the hunt.</li>
+    
+            <li><strong>Round 2: Sudoku Round</strong> – Teams that qualified from Round 1 had to solve a time-based Sudoku
+              puzzle. The goal was to test analytical thinking and pattern recognition skills under time pressure.</li>
+    
+            <li><strong>Round 3: Hunting Round</strong> – The real hunt began as participants searched across the college
+              campus to find hidden cheats. Each team had to collect four cheats, where each clue led to the next. The
+              progress depended entirely on solving the previous clue.</li>
+    
+            <li><strong>Round 4: Diamond Round</strong> – The final and most exciting round. Shortlisted teams received four
+              final cheats containing hints to the exact location of a hidden “diamond.” The last cheat led to the ultimate
+              destination. The first team to find it was declared the winner!</li>
+          </ul>
+    
+          <p>
+            The event was filled with excitement, suspense, and laughter. It was an outstanding example of how fun learning,
+            problem-solving, and teamwork can be when blended with creativity.
+          </p>
+    
+          <p><strong>🏆 Winners:</strong></p>
+          <ul>
+            <li>🥇 First Place: Shreyash Rokade & Team (S.Y. ETC)</li>
+            <li>🥈 Second Place: Shweta Kale & Team (F.Y.)</li>
+            <li>🥉 Third Place: Siddhi Ghadge & Team (F.Y. CSBS)</li>
+          </ul>
+        </div>
+    
+        <div class="freshers-photos">
+          <img src="images/hunt1.jpg" alt="Treasure Hunt 1" />
+          <img src="images/hunt7.jpg" alt="Treasure Hunt 2" />
+          <img src="images/hunt3.jpg" alt="Treasure Hunt 3" />
+          <img src="images/hunt4.jpg" alt="Treasure Hunt 4" />
+          <img src="images/hunt5.jpg" alt="Treasure Hunt 5" />
+          <img src="images/hunt6.jpg" alt="Treasure Hunt 6" />
+            
+        </div>
+      </div>
+      </div>
+    
+    
+      <div class="event-detail" id="farewell">
+        <h3>🎓 Farewell – B.Tech Batch</h3>
+    
+        <div class="freshers-content">
+          <p>
+            The farewell ceremony for our final-year B.Tech students was a heartfelt and emotional gathering, filled with
+            warm memories, laughter, and gratitude. As the students bid adieu to their undergraduate journey, our department
+            celebrated their achievements and contributions with great pride.
+          </p>
+    
+          <p>
+            A proud and special highlight of this year was the introduction of the <strong>Pinnacle Award</strong> – an
+            honor initiated by our esteemed alumni, <strong>Mr. Shivprasad Sakharape Sir</strong>. This prestigious award is
+            presented to the <strong>Best Outgoing Student of the ENTC Department</strong>, recognizing excellence in
+            academics, leadership, and overall personality.
+          </p>
+    
+          <p>
+            The first-ever <strong>Pinnacle Award</strong> was conferred to <strong>Ms. Vaishnavi Adnaik</strong> for her
+            outstanding performance and contributions throughout her academic journey. She was honored with a beautifully
+            crafted shield and a cash prize of <strong>₹11,000</strong>.
+          </p>
+    
+          <p>
+            Final-year students shared their cherished memories and heartfelt gratitude towards the faculty, friends, and
+            institute. The event featured emotional and nostalgic moments through:
+          </p>
+    
+          <ul>
+            <li>🎤 <strong>Farewell Speeches</strong> by students and faculty</li>
+            <li>📸 <strong>Photo Slideshows</strong> showcasing their four-year journey</li>
+            <li>💬 <strong>Sharing of Memories</strong> that reflected joy, growth, and lifelong friendships</li>
+          </ul>
+        </div>
+    
+        <div class="freshers-photos">
+          <img src="images/fare1.jpg" alt="Farewell 1" />
+          <img src="images/fare2.jpg" alt="Farewell 2" />
+          <img src="images/fare3.jpg" alt="Farewell 3" />
+          <img src="images/fare4.jpg" alt="Farewell 4" />
+          <img src="images/fare5.jpg" alt="Farewell 5" />
+          <img src="images/fare6.jpg" alt="Farewell 6" />
+          <img src="images/fare7.jpg" alt="Farewell 7" />
+          <img src="images/fare8.jpg" alt="Farewell 8" />
+          <img src="images/fare9.jpg" alt="Farewell 9" />
+            
+        </div>
+      </div>
+    
+      <div class="event-detail" id="valedictory">
+        <h3>🏁 ETESA Valedictory Function 🎓</h3>
+    
+        <div class="freshers-content">
+          <p>
+            The <strong>Valedictory Function of ETESA</strong> marked the formal conclusion of an incredible academic year
+            filled with learning, leadership, and innovation. This event served as a heartfelt tribute to the contributions
+            of all committee members, volunteers, and faculty coordinators who worked tirelessly to make each initiative a
+            grand success.
+          </p>
+    
+          <p>
+            During the function, we reflected on the milestones achieved throughout the year—ranging from technical
+            workshops, national-level competitions, social drives, and cultural celebrations. The highlights of the event
+            included:
+          </p>
+    
+          <ul>
+            <li>🏆 <strong>Award Distribution</strong> to recognize outstanding performances and dedication.</li>
+            <li>🎤 <strong>Speeches</strong> from the President, Vice President, and Faculty Heads, sharing their
+              experiences and key learnings.</li>
+            <li>💐 <strong>Farewell Segment</strong> to bid adieu to final-year committee members, appreciating their
+              contributions and wishing them success in future endeavors.</li>
+            <li>📸 <strong>Memory Showcase</strong> featuring a video and photo journey of ETESA activities across the year.
+            </li>
+          </ul>
+    
+          <p>
+            The Valedictory Function not only celebrated the achievements of the past year but also inspired the upcoming
+            batches to carry forward the legacy of ETESA with the same enthusiasm and commitment.
+          </p>
+        </div>
+    
+        <div class="freshers-photos">
+          <img src="images/val1.jpg" alt="Valedictory 1" />
+          <img src="images/val2.jpg" alt="Valedictory 2" />
+          <img src="images/val3.jpg" alt="Valedictory 3" />
+          <img src="images/val4.jpg" alt="Valedictory 4" />
+          <img src="images/val5.jpg" alt="Valedictory 5" />
+          <img src="images/val6.jpg" alt="Valedictory 6" />
+          <img src="images/val7.jpg" alt="Valedictory 7" />
+          <img src="images/val8.jpg" alt="Valedictory 8" />
+          <img src="images/val9.jpg" alt="Valedictory 9" />
+          <img src="images/val10.jpg" alt="Valedictory 10" />
+          <img src="images/val11.jpg" alt="Valedictory 11" />
+          <img src="images/val12.jpg" alt="Valedictory 12" />
+            
+        </div>
+      </div>
+      </div>
+    
+    </section>
+
+
+
+<!--Gallary section--->
+<section class="gallery-section" id="Gallery">
+    <h2 class="section-title">Gallery: Moments with Our Committee</h2>
+    <div class="gallery-grid">
+      <img src="images/inugaral time.jpg" alt="Inuguration">
+      <img src="images/alumini.jpg" alt="Committee Event 2">
+      <img src="images/etc.jpg" alt="Committee Group Photo">
+      <img src="images/eureka.jpg" alt="Eureka Presentation">
+      <img src="images/farewell.jpg" alt="Jidnyasa Project Display">
+      <img src="images/core.jpg" alt="Decorated Department">
+      <img src="images/hunt.jpg" alt="Decorated Department">
+      <img src="images/girl.jpg" alt="Decorated Department">
+      <img src="images/industrial.jpg" alt="Decorated Department">
+      <img src="images/img2.jpg" alt="Decorated Department">
+      <img src="images/iedc.jpg" alt="Decorated Department">
+      <img src="images/alm3.jpg" alt="Decorated Department">
+
+   
+    </div>
+  </section>
+
+
+  <!--Videos-->
+<section id="etesa-videos" class="videos">
+  <h2> 🎬 ETESA Video Gallery</h2>
+  <div class="video-grid">
+    
+    <div class="video-card">
+      <iframe src="https://drive.google.com/file/d/1Cya3HzapcvQ-8IxPIjM5SHQtrqEwlbUB/preview" allow="autoplay" allowfullscreen></iframe>
+      <p> ETESA Inauguration Ceremony</p>
+    </div>
+
+    <div class="video-card">
+      <iframe src="https://drive.google.com/file/d/1bzYuZSUzmh63kFK0kn8YYB9PQ-nsLpbK/preview" allow="autoplay" allowfullscreen></iframe>
+      <p>ETESA Committee 2k25</p>
+    </div>
+     <div class="video-card">
+      <iframe src="https://drive.google.com/file/d/1HGnpV9GoMSt_yj4skUB_275jQDwlxBuS/preview"
+ allow="autoplay" allowfullscreen></iframe>
+      <p>Quiz Competition</p>
+    </div>
+
+    <div class="video-card">
+      <iframe src="https://drive.google.com/file/d/1XTwNWI-GijGzRGQCyuvMHxFsjPgaux7q/preview" allow="autoplay" allowfullscreen></iframe>
+      <p>PTA Meeting</p>
+    </div>
+
+       <div class="video-card">
+      <iframe src="https://drive.google.com/file/d/16dAKbcUbLNipHFz1VxD5tXzP2qZwNXnS/preview" allow="autoplay" allowfullscreen></iframe>
+      <p>Coding Competition</p>
+    </div>
+
+     <div class="video-card">
+      <iframe src="https://drive.google.com/file/d/1byXRxweMZtR3oPRMFNVWMda79XA6zYAc/preview" allow="autoplay" allowfullscreen></iframe>
+      <p>Treasure Hunt</p>
+    </div>
+
+    <div class="video-card">
+      <iframe src="https://drive.google.com/file/d/1Cc8BkSVYtHO0ot9KZSlqnOCSLEbIoieP/preview" allow="autoplay" allowfullscreen></iframe>
+      <p>Treasure Hunt Vlog</p>
+    </div>
+
+    <div class="video-card">
+      <iframe src="https://drive.google.com/file/d/1L6yA_d63akyOtqsIRAB5WHtjwoBHbkli/preview" allow="autoplay" allowfullscreen></iframe>
+      <p>Eureka Vlog</p>
+    </div>
+    
+    <div class="video-card">
+      <iframe src="https://drive.google.com/file/d/1u5Y_iq2vPUwltrOKa_YFGovnUAp8mduY/preview" allow="autoplay" allowfullscreen></iframe>
+      <p>Freshers</p>
+    </div>
+
+    
+
+
+    <div class="video-card">
+      <iframe src="https://drive.google.com/file/d/1GvhcudtSB1Uurimfr1ejfB3CsQh4rMxG/preview" allow="autoplay" allowfullscreen></iframe>
+      <p>Eureka-Jidnyasa Preparation</p>
+    </div>
+
+    
+   
+    
+
+ 
+
+
+    <div class="video-card">
+      <iframe src="https://drive.google.com/file/d/1e3Bb01i6TJN-I92sCzukfsf6rcx6mTX2/preview" allow="autoplay" allowfullscreen></iframe>
+      <p>Eureka-Jidnyasa 2k25</p>
+    </div>
+
+    
+
+  </div>
+</section>
+
+
+
+  </div>
+</section>
+>
+
+
+
+  <section class="event-reports" id="Reports">
+    <h2 class="section-title">Event Reports</h2>
+    <div class="report-list">
+      <div class="report-item">
+        <p>ETESA Inauguration 2025</p>
+        <a href="documents/event1.pdf" target="_blank" class="download-btn">View Pdf</a>
+      </div>
+      <div class="report-item">
+        <p>Quiz Competition</p>
+        <a href="documents/quiz final.pdf" target="_blank" class="download-btn">View Pdf</a>
+      </div>
+      <div class="report-item">
+        <p>Aptitude Competition</p>
+        <a href="documents/aptitude.pdf" target="_blank" class="download-btn">View Pdf</a>
+      </div>
+      <div class="report-item">
+        <p>Essay-Writing Competition</p>
+        <a href="documents/essay report.pdf" target="_blank" class="download-btn">View Pdf</a>
+      </div>
+      <div class="report-item">
+        <p>PTA-Meeting</p>
+        <a href="documents/PTA.pdf" target="_blank" class="download-btn">View Pdf</a>
+      </div>
+      <div class="report-item">
+        <p>Alumini Meet</p>
+        <a href="documents/alumini.pdf" target="_blank" class="download-btn">View Pdf</a>
+      </div>
+      <div class="report-item">
+        <p>Coding Competition</p>
+        <a href="documents/coding.pdf" target="_blank" class="download-btn">View Pdf</a>
+      </div>
+      <div class="report-item">
+        <p>Treasure-Hunt</p>
+        <a href="documents/hunt.pdf" target="_blank" class="download-btn">View Pdf</a>
+      </div>
+      <!-- Add more reports here -->
+    </div>
+  </section>
+
+
+
+
+  <section id="feedback" class="feedback-section">
+    <h2>Send Us Your Feedback</h2>
+    <form id="feedbackForm">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Suggestions or Feedback..." required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+    <p id="responseMsg" style="margin-top: 10px; font-weight: bold; color: green;"></p>
+  </section>
+
+
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <p>
+        Follow us on
+        <a href="https://www.instagram.com/etesa_2k24_25?igsh=MTByZTBmbWx1cmdiNw==" target="_blank" class="insta-link">
+          <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" class="insta-icon">
+          Instagram
+        </a>
+      </p>
+      <p>&copy; 2025 Created by Bhakti Yadav | ENTC Student Association</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
